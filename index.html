@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 4</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            background-color: rgb(209, 201, 250);
+        }
+        #Pmain {
+            width: 100vw;
+            /* background-color: rgb(243, 89, 89); */
+            height: 100vh;
+        }
+
+        #Pmain>h1 {
+            text-align: center;
+
+        }
+
+        .main {
+            display: grid;
+            grid-template-columns: repeat(2, 2fr);
+            grid-template-rows: repeat(2, 2fr);
+            justify-items: center;
+            align-items: center;
+            gap: 5vh;
+        }
+
+        .Pbox {
+            background-color: rgb(189, 128, 247);
+            width: 500px;
+            height: 300px;
+            border: 2px solid black;
+            border-radius: 15px;
+        }
+        .Pbox:hover{
+            background-color: rgb(176, 104, 243);
+            box-shadow: rgba(18, 74, 245, 0.25) 0px 54px 55px, rgba(18, 74, 245, 0.25) 0px -12px 30px, rgba(18, 74, 245, 0.25) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            border: none
+        }
+
+        /* Parent child selector */
+
+        .parentChild h2 {
+            text-align: center;
+            padding: 10px;
+        }
+
+        .hbox {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            /* gap: 10px; */
+            
+        }
+
+        .boxp .box {
+            background-color: rgb(243, 89, 89);
+            width: 100px;
+            border: 2px solid black;
+            height: 100px;
+            margin: 10px;
+            text-align: center;
+            border-radius: 7px;
+        }
+        .box:hover{
+            box-shadow: rgba(243, 15, 15, 0.25) 0px 54px 55px, rgba(243, 15, 15, 0.25) 0px -12px 30px, rgba(18, 74, 245, 0.25) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            border: none;
+            background-color: rgb(243, 40, 40);
+        }
+
+        /* Child selector */
+
+        .childSelector>h2{
+            text-align: center;
+        }
+        .boxp > div{
+            background-color: rgb(89, 243, 89);
+            width: 100px;
+            border: 2px solid black;
+            height: 100px;
+            margin: 10px;
+            text-align: center;
+            border-radius: 7px;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div id="Pmain">
+        <h1>Assignment-4</h1>
+        <div class="main">
+            <div class="parentChild Pbox">
+                <h2>Parent child selector</h2>
+                <div class="hbox">
+                    <div class="boxp">
+                        <div class="box">box-1</div>
+                        <div class="box">box-2</div>
+                    </div>
+                    <div class="boxp">
+                        <div class="box">box-3</div>
+                        <div class="box">box-4</div>
+                    </div>
+                </div>
+            </div>
+            <div class="childSelector Pbox">
+                <h2>Child selector</h2>
+                <div class="hbox">
+                    <div class="boxp">
+                        <div class="box2">box-1</div>
+                        <div class="box2">box-2</div>
+                    </div>
+                    <div class="boxp">
+                        <div class="box2">box-3</div>
+                        <div class="box2">box-4</div>
+                    </div>
+                </div>
+            </div>
+            <div class="pre+next Pbox">
+                <h2>Prev + next</h2>
+                <div class="hbox">
+                    <div class="boxp">
+                        <div class="box">box-1</div>
+                        <div class="box">box-2</div>
+                    </div>
+                    <div class="boxp">
+                        <div class="box">box-3</div>
+                        <div class="box">box-4</div>
+                    </div>
+                </div>
+            </div>
+            <div class="preSiblings Pbox">
+                <h2>Prev siblings</h2>
+                <div class="hbox">
+                    <div class="boxp">
+                        <div class="box">box-1</div>
+                        <div class="box">box-2</div>
+                    </div>
+                    <div class="boxp">
+                        <div class="box">box-3</div>
+                        <div class="box">box-4</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
